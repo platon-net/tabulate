@@ -1,3 +1,22 @@
+## This is a patched fork
+
+[p-ranav/tabulate](https://github.com/p-ranav/tabulate) at `b9026bf`, plus three
+fixes that are open as pull requests upstream:
+
+| fix | issue | pull request |
+| --- | --- | --- |
+| ANSI escape sequences are no longer counted in the cell width | [63](https://github.com/p-ranav/tabulate/issues/63) | [136](https://github.com/p-ranav/tabulate/pull/136) |
+| nested tables keep their colors | [63](https://github.com/p-ranav/tabulate/issues/63), [116](https://github.com/p-ranav/tabulate/issues/116), [124](https://github.com/p-ranav/tabulate/issues/124) | [137](https://github.com/p-ranav/tabulate/pull/137) |
+| printing a table no longer resets the process locale | [114](https://github.com/p-ranav/tabulate/issues/114) | [138](https://github.com/p-ranav/tabulate/pull/138) |
+
+These are not merged yet. `single_include/tabulate/tabulate.hpp` from this
+branch is a drop-in replacement in the meantime, and `v1.5.0-platon1` is a fixed
+point to pin to.
+
+Everything below is upstream's README.
+
+---
+
 <p align="center">
   <img height="50" src="img/logo.jpg"/>  
 </p>
